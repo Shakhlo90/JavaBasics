@@ -1,0 +1,156 @@
+*public class WebDriverTester {
+
+
+    public static void main(String[] args) {
+   Safari safari=new Safari();
+        safari.startBrowser();
+        safari.test();
+        safari.closeBrowser();
+        Chrome chrome=new Chrome();
+        chrome.startBrowser();
+        chrome.test();
+        chrome.closeBrowser();
+        FireFox fireFox=new FireFox();
+        fireFox.startBrowser();
+        fireFox.test();
+        fireFox.closeBrowser();
+
+
+        WebDriver[] browsers={new Chrome(),new Safari(),new FireFox()};
+        for (WebDriver browser:browsers
+        ) {
+            browser.startBrowser();
+            browser.test();
+            browser.closeBrowser();
+        }
+
+        .findElement(By.id("email")).sendKeys("janel");
+.findElement(By.id("pass")).sendKeys("janel123");
+.findElement(By.name("login")).click();
+        From Janel to Everyone 07:46 PM
+        args) throws InterruptedException {
+            System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+            WebDriver face=new ChromeDriver();
+            face.get("https://facebook.com/");
+            Thread.sleep(2000);
+            face.findElement(By.id("email")).sendKeys("janel@gmail.com");
+            face.findElement(By.id("pass")).sendKeys("janel123");
+            face.findElement(By.name("login")).click();
+
+
+
+        }}
+
+.findElement(By.id("email")).sendKeys("janel");
+.findElement(By.id("pass")).sendKeys("janel123");
+.findElement(By.name("login")).click();
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+        WebDriver face=new ChromeDriver();
+        face.get("https://facebook.com/");
+
+        face.findElement(By.id("email")).sendKeys("janel@gmail.com");
+        face.findElement(By.id("pass")).sendKeys("janel123");
+
+        Thread.sleep(2000);
+        face.findElement(By.linkText("Forgot password?")).click();
+        Thread.sleep(2000);
+        face.findElement(By.id("identify_email")).sendKeys("545454545");
+        Thread.sleep(3000);
+        face.findElement(By.id("did_submit")).click();
+        Thread.sleep(3000);
+        //face.findElement(By.name("login")).click();
+        face.quit();
+
+
+
+          /* Chrome chrome=new Chrome();
+        FireFox fireFox=new FireFox();
+        Safari safari=new Safari();
+        WebDriver[] browsers={chrome,fireFox,safari};
+        */
+        /*
+        Creating objects of all Child classes and storing them in an array of
+        type Webdriver we can do this bcause upcasting allows us to do this
+
+         */
+    /*for(int i=0; i<browsers.length; i++){
+        browsers[i].startBrowser();
+        browsers[i].test();
+        browsers[i].closeBrowser();
+    }
+
+
+System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+    WebDriver face=new ChromeDriver();
+        face.get("https://facebook.com/");
+
+        face.findElement(By.id("email")).sendKeys("janel@gmail.com");
+        face.findElement(By.id("pass")).sendKeys("janel123");
+
+        Thread.sleep(2000);
+        face.findElement(By.linkText("Forgot password?")).click();
+        Thread.sleep(2000);
+        face.findElement(By.id("identify_email")).sendKeys("545454545");
+        Thread.sleep(3000);
+        face.findElement(By.id("did_submit")).click();
+        Thread.sleep(3000);
+    //face.findElement(By.name("login")).click();
+        face.quit();*/
+
+///***********************************************************************
+//Write a function named `dynamicCipher(offset)`. When invoked, the
+//`dynamicCipher` function will accept a number to be used as the
+//offset and return a function. Positive numbers offset each character in a word
+//to the right and negative numbers offset each character in a word to the left.
+//
+//The function returned by `dynamicCipher` will accept a string in which each
+//character of the string will be offset by the amount provided when
+//`dynamicCipher` was first invoked. It will return a new string which represents
+//the original string encoded by the offset.
+//o(word1)); // "ecvvckn"
+//// the output "ecvvckn" represents each character in the input string offset by two indexes to the RIGHT in the alphabet
+//
+//let word2 = "egg";
+//rotateLeftTwo = dynamicCipher(-2);
+//rotateLeftTwo(word2);
+//console.log(rotateLeftTwo(word2)); // "cee"
+//// the output "cee" represents each character in the input string offset by two indexes to the LEFT in the alphabet
+//
+//***********************************************************************/
+/*
+     Write a program  that creates a class named as Encode that has one method named as EncodeString
+     (int offset, String word).
+     This function would encode or encrypt the given word, for example
+     if words is abc and offset is 2, so we get cdf as string in return
+    create one instance array to store alphabets from a to z
+    */
+//public class Encode {
+   /*
+     Write a program  that creates a class named as Encode that has one method named as EncodeString
+     (int offset, String word).
+     This function would encode or encrypt the given word, for example
+     if words is abc and offset is 2, so we get cdf as string in return
+    create one instance array to store alphabets from a to z
+    */
+
+ /*   String alphabet;
+
+    public Encode(String alphabet){
+        this.alphabet=alphabet;
+    }
+
+    public String EncodeString(int offset, String word){
+        String encodedWord="";
+        for (int i=0;i<word.length();i++){
+            char c=word.charAt(i);// corrector one by one
+
+            int index=alphabet.indexOf(c);
+            index+=offset;
+            char newC=alphabet.charAt(index);
+            encodedWord+=newC;
+        }
+
+            String alphabet="abcdefghij";
+            Encode obj=new Encode(alphabet);
+            System.out.println(obj.EncodeString(2,"abc"));
+
