@@ -1,0 +1,178 @@
+ public static void main(String[] argrs){
+    EncapsulationDemo print=new EncapsulationDemo();
+    print.setempName("Mario");
+    print.setempAge(32);
+    System.out.println("Employee Name: "+print.getempName());
+    System.out.println("Employee Age: "+print.getempAge());
+  }
+}
+class EncapsulationDemo{
+  private String  empName;
+  private int empAge;
+
+  void setempName(String empName){
+    this.empName=empName;
+  }
+  void setempAge(int empAge){
+    this.empAge=empAge;
+  }
+  String getempName(){
+    return empName;
+  }
+  int getempAge(){
+    return empAge;
+  }
+}
+
+R179
+class Main {
+  public static void main(String[] args){
+    EncapsulationDemo print=new EncapsulationDemo();
+    System.out.println("Employee Name: "+print.getempName());
+    System.out.println("Employee Age: "+print.getempAge());
+  }
+}
+class EncapsulationDemo{
+  private String empName="John";
+  private int empAge=30;
+
+  String getempName(){
+    return empName;
+  }
+   int getempAge(){
+    return empAge;
+  }
+}
+
+R180
+class Account{
+private long acc_no;
+private String name;
+private String email;
+private double amount;
+
+  void setacc_no(long acc_no){
+    this.acc_no=acc_no;
+  }
+  void setname(String name){
+    this.name=name;
+  }
+  void setemail(String email){
+    this.email=email;
+  }
+  void setamount(double amount){
+    this.amount=amount;
+  }
+  long getacc_no(){
+    return acc_no;
+  }
+  String getname(){
+    return name;
+  }
+  String getemail(){
+    return email;
+  }
+  double getamount(){
+    return amount;
+  }
+}
+class Main {
+  public static void main(String [] args){
+    Account print=new Account();
+    print.setacc_no(7560504000l);
+    print.setname("Sumair");
+    print.setemail("sumair@syntax.com");
+    print.setamount(50000);
+       System.out.println(print.getacc_no()+" "+print.getname()+" "+print.getemail()+" "+print.getamount());
+  }
+}
+
+R181
+class file1{
+private String firstname;
+private String lastname;
+private int birthmonth;
+private int birthday;
+private int birthyear;
+private String ssn;
+
+  file1(String firstname, String lastname, int birthmonth, int birthday, int birthyear, String ssn){
+    setfirstname(firstname);
+    setlastname(lastname);
+    setbirthmonth(birthmonth);
+    setbirthday(birthday);
+    setbirthyear(birthyear);
+    setssn(ssn);
+  }
+void setfirstname(String firstname){
+    this.firstname=firstname;
+  }
+  void setlastname(String lastname){
+    this.lastname=lastname;
+  }
+  void setbirthmonth(int birthmonth){
+    this.birthmonth=birthmonth;
+  }
+  void setbirthday(int birthday){
+    this.birthday=birthday;
+  }
+  void setbirthyear(int birthyear){
+    this.birthyear=birthyear;
+  }
+  void setssn(String ssn){
+    this.ssn=ssn;
+  }
+  String getfirstname(){
+    return firstname;
+  }
+  String getlastname(){
+    return lastname;
+  }
+  int getbirthmonth(){
+    return birthmonth;
+  }
+  int getbirthday(){
+    return birthday;
+  }
+  int getbirthyear(){
+    return birthyear;
+  }
+  String getssn(){
+    return ssn;
+  }
+  String formatBirthday(){
+    return birthmonth+"/"+birthday+"/"+birthyear;
+  }
+}
+From Janel to Everyone 06:39 PM
+R182
+import java.util.ArrayList;
+class Main {
+  public static void main(String[] baaaah){
+    ArrayList<Integer> numbers=new ArrayList<>();
+        numbers.add(111);
+        numbers.add(222);
+        numbers.add(333);
+        numbers.add(444);
+        numbers.add(555);
+        numbers.add(666);
+
+ArrayList<Integer> num=new ArrayList<>();
+num.add(222);
+    num.add(444);
+    num.add(666);
+    numbers.removeAll(num);
+    System.out.println(numbers);
+  }
+}
+numbers.removeAll(num);
+<-- this line was issue
+nums.add(111);
+    nums.add(222);
+    nums.add(333);
+    nums.add(444);
+    nums.add(555);
+    nums.add(555);
+    System.out.println(nums.get(0));
+    System.out.println(nums.get(2));
+    System.out.println(nums.get(4))
