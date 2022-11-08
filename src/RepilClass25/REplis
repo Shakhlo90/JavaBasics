@@ -1,0 +1,145 @@
+import java.util.ArrayList;
+class Main {
+ public static void main(String[] args) {
+        ArrayList<String> words=new ArrayList<>();
+        words.add("third");
+        words.add("first");
+        words.add("second");
+        System.out.println(words);
+
+        words.removeAll(words);
+        System.out.println(words);
+    }}
+
+R196
+import java.util.HashSet;
+import java.util.Set;
+class Main {
+public static void main(String[] args) {
+
+Set<String> words = new HashSet<>();
+        words.add("Red");
+        words.add("Pink");
+        words.add("White");
+        words.add("Yellow");
+        words.add("Black");
+
+  System.out.println("Original Hash Set: "+words);
+
+  System.out.println("Size of the Hash Set: "+words.size());
+  import java.util.ArrayList;
+          class Main {
+              public static void main(String[] args) {
+                  ArrayList<String> words=new ArrayList<>();
+                  words.add("third");
+                  words.add("first");
+                  words.add("second");
+                  System.out.println(words);
+
+                  words.removeAll(words);
+                  System.out.println(words);
+              }}
+
+          R196
+  import java.util.HashSet;
+  import java.util.Set;
+          class Main {
+              public static void main(String[] args) {
+
+                  Set<String> words = new HashSet<>();
+                  words.add("Red");
+                  words.add("Pink");
+                  words.add("White");
+                  words.add("Yellow");
+                  words.add("Black");
+
+                  System.out.println("Original Hash Set: "+words);
+
+                  System.out.println("Size of the Hash Set: "+words.size());
+              }}
+
+          R197
+  import java.util.ArrayList;
+  import java.util.Iterator;
+          class Main {
+              public static void main(String[] args) {
+
+                  var words = new ArrayList<String>();
+                  words.add("null");
+                  words.add("Sohil");
+                  words.add("Diego");
+                  words.add("Alijon");
+                  words.add("Asel");
+                  words.add("Sumair");
+                  for (String element:words){
+                      System.out.println(element);
+                  }
+                  Iterator<String> iterator=words.iterator();
+                  while (iterator.hasNext()){
+                      String print=iterator.next();
+                      System.out.println(print);
+                  }}}
+
+          R199
+          From Janel to Everyone 05:51 PM
+  import java.util.HashMap;
+          class Main {
+              public static void main(String[] args) {
+                  HashMap<String, String> data = new HashMap<>();
+                  data.put("Street", "Patrick ST");
+                  data.put("Suite", "265");
+                  data.put("City", "Vienna");
+                  data.put("Zip", "22180");
+                  data.put("Country", "United State");
+
+                  System.out.println(data.size());
+
+                  data.clear();
+                  System.out.println(data.size());
+              }}
+
+          R201
+  import java.util.Collection;
+  import java.util.LinkedHashMap;
+  import java.util.Set;
+          class Main {
+              public static void main(String[] args) {
+                  LinkedHashMap<String,String> data=new LinkedHashMap<>();
+                  data.put("1 item", "apple");
+                  data.put("2 item", "banana");
+                  data.put("3 item", "pear");
+                  data.put("4 item", "tomato");
+                  data.put("5 item", "mango");
+                  data.put("6 item", "kiwi");
+
+                  Set<String> allKeys=data.keySet();
+                  Collection<String> allValues=data.values();
+                  //System.out.println(allKeys+" "+allValues);
+                  var iterator=allKeys.iterator();
+                  var it = allValues.iterator();
+                  while(iterator.hasNext()){
+                      while ((it.hasNext())){
+                          var key=iterator.next();
+                          var value=it.next();
+                          System.out.println("Key is "+key+" and values is "+value);
+                      }}}}
+
+
+          LinkedHashMap<String,String>addr=new LinkedHashMap<>();
+          addr.put("Street","Patrick ST");
+          addr.put("Suite","265");
+          addr.put("City","Vienna");
+          addr.put("Zip","22180");
+          addr.put("Country","United States");
+          Collection<String>info=addr.values();
+          var iterator=info.iterator();
+          while(iterator.hasNext()){
+              var word=iterator.next();
+              System.out.println(word);
+          }
+
+          // for(String getInfo:info){
+          // System.out.println(getInfo);
+          // }
+
+  }}

@@ -66,8 +66,20 @@ public class Dog {
         double getWeight(){
             return weight;
         }
-        void printInfo() {
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                '}';
+    }
+
+    void printInfo() {
             System.out.println("Name " + name + " Breed " + breed + " Age " + age + " Weight " + weight);
+
         }
     }
 
